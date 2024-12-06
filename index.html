@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #27323E;
+            font-family: "Roboto", serif;
+            
+        }
+        .navbar {
+            background-color: transparent !important;
+        }
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: white !important;
+        }
+        .bott {
+            background: linear-gradient(108.35deg, #FC4A1A -36.03%, #F7B733 128.44%);
+            display: inline-block !important;
+            cursor: pointer;
+            transition:  1s ease; 
+        }
+        .bott:hover {
+            background: linear-gradient(108.35deg, #ee3704 -36.03%, #e0a01f 128.44%);
+            transform: scaleX(1.1) !important;
+        }
+        .bttn {
+            border-bottom-left-radius: 0 !important;
+        }
+        .left-sec {
+            font-size: 22px;
+            line-height: 25.78px;
+        }
+        i {
+            font-size: 30px;
+        }
+        .icons ul li a {
+            display: inline-block !important;
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50%;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            display: flex !important;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0);
+            transition: all 0.4s ease; 
+        }
+        .icons a:hover {
+            transform: translate(0, -15%);
+        }
+        .right-sec img {
+            height: 500px;
+            border-radius: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: moveup 1.5s linear forwards;
+        }
+        .right-sec img {
+            animation-delay: 1.5s;
+        }
+        .anim {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: moveup 1.6s linear forwards;
+            line-height: 40px;
+        }
+        .icons {
+            animation-delay: 1s;
+            line-height: 30px;
+        }
+        .bttn {
+            animation-delay: 0.3s;
+        }
+        .text {
+            animation-delay: 0.7s;
+        }
+        .bbttn {
+            animation-delay: 1.3s;
+        }
+        @keyframes moveup {
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .about-right .gradiant-div{
+          margin-left: -50px;
+        }
+        .navbar .navbar-brand span {
+            background: linear-gradient(108.35deg, #FC4A1A -36.03%, #F7B733 128.44%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        }
+       .spener{
+        background: linear-gradient(#212529,  #212529),radial-gradient(circle at top left , #FC4A1A  ,#F7B733 );
+        background-origin: border-box;
+    background-clip: content-box , border-box;
+    color: #ffffff;
+    border: 1px solid transparent;
+    padding: 1px;
+    width:45px;
+    height:77px;
+    position: relative;
+    margin-left: 45% ;
+  margin-bottom: 5% !important;
+   
+   
+}
+@keyframes spener {
+  0%{
+ bottom: 0;
+  }
+  50%{
+bottom: 80%;
+  }
+  100%{
+bottom: 0;
+  }
+}
+
+.spener div{
+  width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(108.35deg, #FC4A1A -36.03%, #F7B733 128.44%);
+    position: absolute;
+    animation: spener 1s infinite;
+}
+        .about{
+            background-color:#212529;
+         
+        }
+        .about-left{
+    background: linear-gradient(#212529,  #212529),radial-gradient(circle at top left , #FC4A1A  ,#F7B733 );
+    background-origin: border-box;
+    background-clip: content-box , border-box;
+    color: #ffffff;
+    border: 1px solid transparent;
+    padding: 2px;
+    width: 270px;
+    height:400px;
+    position: relative;
+   
+}
+
+.about-left img{
+    height: 100%;
+    width: 100%;
+}
+.about-left span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    transform: translate(-50% , -50%);
+}
+.cer1{
+  bottom: -4%;
+  left :25%;
+}
+.cer2{
+  bottom: -10%;
+  left :52%;
+}
+.cer3{
+  bottom: -3%;
+  left : 80%;
+}
+.about-left span img{
+    width: 100%;
+    height: 100%;
+}
+.about-left{
+    margin-bottom: 7%;
+}
+
+
+.gradiant-div{
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(108.35deg, #FC4A1A -36.03%, #F7B733 128.44%);
+    position: absolute;
+  
+}
+.about-right{
+width: 50%;
+}
+.about-right h1{
+margin-left: -25px;
+}
+.cart-item p{
+    color: #27323E;
+
+}
+.cart-item{
+    background-color: #D9D5D5;
+    
+}
+.left{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.left img{
+    width: 100%;
+    height: 100%;
+}
+.right i{
+    font-size: 13px !important;
+    color: #27323E;
+    margin-left: 5px;
+}
+.right h6{
+    color: #27323E; 
+}
+.right p{
+    margin-top: -10px;
+}
+.testimonial .row{
+    gap:30px;
+}
+
+.footer{
+    background-color: #27323E;
+    margin-top: 50px !important;
+  
+}
+.footer-content{
+  border-bottom: 2px solid #D9D9D9;
+}
+.contact div div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(108.35deg, #FC4A1A -36.03%, #F7B733 128.44%);
+}
+.muted{
+  color:  #9F9F9F;
+}
+.input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+/*  */
+.touch input::placeholder , .textarea::placeholder {
+  color: #D9D5D5;
+}
+
+h2 {
+  color: white;
+}
+
+.form-input {
+  border: 2px solid #ffa500;
+  background-color: transparent;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 15px;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ffa500;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #ffa500, #ff4500);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-gradient:hover , .navbar-toggler:hover {
+  background: linear-gradient(to right, #ff4500, #ffa500);
+  box-shadow: 0 0 10px #ff4500;
+  color: #27323E;
+}
+
+
+.info-box {
+  background: linear-gradient(to right, #ff4500, #ffa500);
+  color: white;
+  border-radius: 15px;
+}
+.touch{
+  margin-top: 150px;
+  background-color:  #212529;
+}
+  
+/*  */
+.services-section {
+    background:  #27323E;
+    ;
+    color: white;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-orange {
+    color: #f58220;
+}
+
+.service-box {
+    background-color: #252b38;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f58220;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f58220;
+}
+.project{
+  background-color:#212529;
+  overflow: hidden;
+  
+}
+.fp{
+  font-size: 16px;
+  color: #FC4A1A;
+  margin: 0;
+
+}
+.ep{
+  font-size: 36px;
+  color: #CCD6F6;
+}
+.about-right {
+  text-align: center;
+  margin-top: 100px;
+}
+.portfolio{
+  background-color: #212529;
+}
+
+.height1 {
+  height: 361px;
+}
+.height2 {
+  height: 181px;
+}
+.height2 img {
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+}
+.height1 img {
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+}
+
+.navbar-toggler {
+  background: linear-gradient(to right, #ffa500, #ff4500);
+      border-radius: 50%;     
+    border: none ;          
+    padding: 10px;
+    box-shadow: none !important;         
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.portfolio .gradiant-div{
+  margin-left: -150px;
+}
+.info-box i{
+font-size: 18px;
+}
+@media (max-width :990px) {
+  .navbar-nav{
+  margin-left: 28px !important;
+}
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+.footer input{
+  margin-bottom: 50px;
+}
+.right-sec img{
+  height: 370px;
+  margin-bottom: 10px;
+}
+  .about-left {
+    margin-bottom: 20px;
+  }
+
+  .about-right{
+    width: fit-content ;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+  }
+  .about-right .gradiant-div{
+  margin-left: -50px  ; 
+
+}
+  .about-right h1 {
+    font-size: 1.8rem; 
+    margin-top: 10px !important;
+  }
+  
+  .about-right p {
+    font-size: .8rem; 
+  }
+  .sections {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .left-sec {
+    margin-bottom: 20px; 
+  }
+
+  .left-sec h1 {
+    font-size: 1.8rem; 
+  }
+
+  .left-sec p {
+    font-size: 1rem; 
+  }
+
+  .icons ul {
+    padding: 0; 
+    margin-top: 15px; 
+ 
+  }
+
+  .bott {
+    font-size: 1rem;
+    padding: 10px 20px; 
+  }
+
+  .right-sec {
+    margin-top: 20px; 
+  }
+  .portfolio .gradiant-div{
+  margin-left: -110px;
+  margin-top: -7px;
+}
+  
+}
+
+@media (max-width: 480px) {
+  .left-sec h1 {
+    font-size: 1.5rem; 
+  }
+
+  .left-sec p {
+    font-size: 0.9rem; 
+  }
+
+  .icons ul li {
+    margin: 0 5px; 
+  }
+
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="home">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">Beans <span>Studios</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   
+                    <li class="nav-item mx-4">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#services">My services</a>
+                    </li>
+                    <li class="nav-item ms-4 me-5 ">
+                      <a class="nav-link text-white" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item ms-4 me-5 ">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Start landing -->
+   
+    <div class="container " >
+        <div class="landing mt-5  " ></div>
+        <div class="sections d-flex justify-content-between align-items-center">
+            <div class="left-sec">
+                <div class="anim bttn bott mb-3  rounded-pill mt-5 p-2 d-flex align-items-center justify-content-center text-white">
+                    <span><p class="m-2">Hello, I'm</p></span>
+                </div>
+                <h1 class="anim text text-white fw-bold mt-2">Eng. Rahma</h1>
+                <p class="anim text text-uppercase text-white">frontend developer | ux/ui designer | freelancer</p>
+                <div class="icons anim">
+                    <ul class="d-flex list-unstyled  justify-content-center align-items-center d-sm-flex  ">
+                        <li class="github"><a class="text-black me-3" href="www.linkedin.com/in/rahma-touni-3b4545258" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li class="linkedin"><a class="me-3" href="www.linkedin.com/in/rahma-touni-3b4545258" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="facebook"><a class="text-primary me-3" href="www.linkedin.com/in/rahma-touni-3b4545258" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="whatsapp"><a class="text-success me-3" href="www.linkedin.com/in/rahma-touni-3b4545258" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="bott anim bbttn d-flex align-items-center justify-content-center text-white mt-3 px-3 rounded-pill">
+                    <span><p class="m-2">Download CV</p></span>
+                </div>
+            </div>
+            <div class="right-sec position-relative">
+                <img src="images/roma.png" alt="">
+            </div>
+        </div>
+        <div class="spener rounded-pill d-flex justify-content-center"><div  class="mt-1" ></div></div>
+    </div>
+  </div>
+    <!-- End landing -->
+     <!-- start about -->
+      
+     <div class="about  p-5 " id="about">
+      <div class="container d-flex justify-content-between align-items-center">
+    <div class="about-left text-center rounded-pill ">
+      <!-- <span>  -->
+      <img class="rounded-pill" src="images/rahmaa.jpeg" alt="">
+      
+  <span class="cer1"><img src="images/cer2.jpeg"  alt=""></span>
+  <span  class="cer2"><img src="images/cer1.jpeg"  alt=""></span>
+  <span class="cer3" ><img src="images/cer3.jpeg"  alt=""></span>
+      <!-- </span> -->
+      <h6  class="mt-5">Certifications</h6>
+      <h3 class="">Rahma Touni</h3>
+    </div>
+  
+    
+    <div class="about-right ">
+     <div class="d-flex  ms-5"><div class="gradiant-div z-0"></div>  <h1 class="text-white z-2   ">About me</h1></div>
+     <p  class="text-white " >I'm a third-year student at the Faculty of Computer Science and Artificial Intelligence, specializing in front-end development. I have experience in creating responsive, mobile-optimized websites.</p>
+     <br>
+     <p class="text-white ">Recently, I’ve started studying 3D design and UX/UI, and I’m excited about applying these new skills to my work. I believe that integrating 3D elements and user-centric design will greatly enhance my projects, allowing me to create more interactive and engaging experiences for users in my field.</p>
+    </div>
+  </div>
+</div>   
+  
+  
+      <!-- end about -->
+        <!-- start serv -->
+        <section class="services-section  py-5" id="services">
+          <div class="container text-center">
+              <h2 class="section-title">
+                  <span class="text-orange">My</span> services
+              </h2>
+              <div class="row mt-4">
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">PHOTOGRAPHY</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque.adipisicing elit. Sunt doloremque , elit. Sunt doloremqueadipisicing elit. Sunt doloremque</p>                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">UI/UX DESIGN</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque.adipisicing elit. Sunt doloremque,elit. Sunt doloremqueadipisicing elit. Sunt doloremque</p>                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">WEB DESIGN</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque.adipisicing elit. Sunt doloremque , elit. Sunt doloremqueadipisicing elit. Sunt doloremque</p>                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">WEB DEVELOPMENT</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing eladipisicing elit. Sunt doloremqueelit. Sunt doloremqueit. Sunt doloremque.adipisicing elit. Sunt doloremque </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">3D DESIGN</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque.elit. Sunt doloremque , adipisicing elit. Sunt doloremqueadipisicing elit. Sunt doloremque</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="service-box">
+                          <h5 class="service-title">2D DESIGN</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque. elit. Sunt doloremque adipisicing elit. Sunt doloremqueadipisicing elit. Sunt doloremque </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- end serv -->
+                <!-- start portfolio -->
+                <div class="portfolio  pt-5" id="portfolio">
+                  <div class="d-flex justify-content-center ">
+                    <div class="z-1 gradiant-div"></div>
+                 <h1 class="text-white pb-5 z-2">portfolio</h1>
+                </div>
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="row d-flex flex-column">
+                        <div class="col-12 d-flex">
+                          <div class="col-6">
+                            <img src="images/blog1.png" alt="" style="width: 100%;" class="height1">
+                          </div>
+                          <div class="col-6 d-flex flex-column">
+                            <img src="images/blog2.png" alt="" style="width: 100%;" class="height2">
+                            <img src="images/blog3.png" alt="" style="width: 100%;" class="height2">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <img src="images/blog4.png" alt="" style="width: 100%;" class="height2">
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="row d-flex flex-column">
+                        <div class="col-12">
+                          <img src="images/img5.png" alt="" style="width: 100%;" class="height1">
+                        </div>
+                        <div class="col-12 d-flex">
+                          <div class="col-6">
+                            <img src="images/blog6.png" alt="" style="width: 100%;" class="height2">
+                          </div>
+                          <div class="col-6">
+                            <img src="images/blog5.png" alt="" style="width: 100%;" class="height2">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="row d-flex flex-column">
+                        <div class="col-12 d-flex" style="gap: 0;">
+                          <div class="col-6">
+                            <img src="images/blo8.png" alt="" class="height2" style="width: 100%;">
+                          </div>
+                          <div class="col-6">
+                            <img src="images/blog9.png" alt="" class="height2" style="width: 100%;">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <img src="images/blog10.png" alt="" class="height1" style="width: 100%;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+           
+             
+                
+                 <!-- end portfolio -->
+      
+         <!-- start contact -->
+          <div class="touch  pt-5 d-flex align-items-center" id="contact">
+         <div class="container ">
+          <div class="get"><div class="z-1 gradiant-div " ></div><h2 class="text-uppercase text-white mb-4 div z-2 position-absolute mx-3 my-2  " style="letter-spacing: 2px;">Get in Touch</h2></div>
+          <div class="row ">
+            <!-- Left Form -->
+            <div class="col-md-6">
+              <form class="my-5 py-4" >
+                <div class="mb-3 ">
+                  <input type="text" class="form-control form-input" placeholder="First name">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control form-input" placeholder="Last name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control form-input" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control textarea form-input" placeholder="Message" rows="4"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-gradient mb-3">Send</button>
+                </div>
+              </form>
+            </div>
+        
+            <!-- Right Info Box -->
+            <div class="col-md-6">
+              <div class="info-box p-3">
+                <h4 class="mb-3">Contact Info</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit cum dolore provident laboriosam iure.</p>
+                <p><strong><i class="fa-solid fa-location-crosshairs text-white"></i> Address:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, numquam.</p>
+                <p><strong><i class="fa-solid fa-envelope"></i> Email:</strong> iisraelgonza@gmail.com <br> abelisraelromero@gmail.com</p>
+                <p><strong><i class="fa-solid fa-mobile"></i> Phone:</strong> +52 671 114 3273</p>
+                <p><strong><i class="fa-solid fa-briefcase"></i> Office:</strong> Beans studio</p>
+                <p><strong><i class="fa-brands fa-skype"></i> Skype:</strong> sadfasd.skype</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- end contact -->
+ 
+          <!-- start Testimonial -->
+       <div class="testimonial text-center pt-5">
+        <!-- <div class="container text-center"> -->
+          <h3 class="text-white pb-5">Testimonial</h3>
+          <div class="row  d-flex justify-content-center"> 
+            <div class="cart-item col-md-3 mb-4  p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item col-md-3 mb-4 p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded-circle" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item col-md-3 mb-4 p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded-circle" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item col-md-3 mb-4 p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded-circle" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item col-md-3 mb-4 p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded-circle" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item col-md-3 mb-4 p-3">
+              <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p><br>
+              <div class="content d-flex mx-3">
+                <div class="left">
+                  <img src="rahmaa.jpeg" alt="" class="img-fluid rounded-circle" >
+                </div>
+                <div class="right mx-3">
+                  <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <h6>Roma touni yaseen</h6>
+                  <p class="text-muted">Google</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+        <!-- end Testimonial -->
+         <!-- start footer -->
+         <div class="footer p-2  ">
+          <div class=" footer-content m-4 ">
+              <div class="row text-center">
+                <div class="col-md-3">
+                  <h3 class="text-white my-2">Rahma Touni</h3>
+                  <p class="muted  my-2">desc</p>
+                </div>
+                <div class="col-md-2">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-4 me-5  my-3">
+                      <a class="nav-link muted" href="#">Links</a>
+                    </li>
+                    <li class="nav-item   my-2">
+                      <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-4  my-2">
+                      <a class="nav-link text-white" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item mx-4  my-2">
+                      <a class="nav-link text-white" href="#services">My services</a>
+                    </li>
+                    <li class="nav-item ms-4 me-5 my-2">
+                      <a class="nav-link text-white" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item ms-4 me-5 my-2">
+                      <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item   my-2">
+                      <a class="nav-link muted" href="#">Help</a>
+                    </li>
+                    <li class="nav-item mx-4  my-2">
+                      <a class="nav-link active text-white " aria-current="page" href="#">Payment options</a>
+                    </li>
+                    <li class="nav-item mx-4  my-2">
+                      <a class="nav-link text-white" href="#">Returns</a>
+                    </li>
+                    <li class="nav-item mx-4  my-2">
+                      <a class="nav-link text-white" href="#">Privacy Policies</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-4 me-5  my-2">
+                      <a class="nav-link muted" href="#">Newsletter</a>
+                    </li>
+                  </ul>
+                  <form action="" class="d-flex ">
+                    <input type="text" class="input mx-3" placeholder=" Enter Your Email Address">
+                    <br>
+                    <br>
+                    <input type="text" class="input sub" placeholder=" Subscribe">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <p class="text-white ms-4 " >2024 furino. All rights reverved</p>
+          </div>
+          
+         
+      
+           <!-- end footer -->
+            
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
